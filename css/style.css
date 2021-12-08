@@ -662,7 +662,8 @@
   width: 70%;
   display: block;
   margin: 0 auto;
-  height: 15%;
+  height: 3rem;
+  margin-top: 2rem;
   position: relative;
   -webkit-clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
           clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
@@ -712,7 +713,7 @@
   width: 70%;
   display: block;
   margin: 0 auto;
-  height: 15%;
+  height: 3rem;
   margin-bottom: 2rem;
   position: relative;
   -webkit-clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
