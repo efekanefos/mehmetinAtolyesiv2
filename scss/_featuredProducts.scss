@@ -95,6 +95,18 @@
     &--listItem {
       margin-bottom: 5rem;
     }
+    &--listItem--img {
+      width: 100%;
+    }
+    &--listItem--btn {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 5px 5px 5px #4b00bb;
+    }
+    &--listItem--itemName {
+      font-size: 1rem;
+    }
   }
 }
 
