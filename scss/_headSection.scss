@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)),
     url("./../images/featuredProducts/background.jpg");
   min-height: 75vh;
   background-position: bottom;
@@ -44,6 +44,10 @@
     position: relative;
     pointer-events: all;
     cursor: pointer;
+  }
+  &--listItem a {
+    text-decoration: none;
+    color: #fff;
   }
 
   .active::before {
@@ -96,5 +100,15 @@
     &--list {
       display: none;
     }
+  }
+}
+
+/* Products */
+
+#headSection {
+  min-height: 20vh;
+  background-position: bottom;
+  &__title {
+    display: none;
   }
 }
