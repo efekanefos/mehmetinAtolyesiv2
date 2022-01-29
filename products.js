@@ -113,13 +113,7 @@ productsSection__list.innerHTML = products
         
             <h3 id="productsSection--listItem--itemName">${item.name}</h3>
             <button id="productsSection--listItem--btn" class="featuredProducts--listItem--btn">
-              <embed
-                class="featuredProducts--listItem--logo"
-                id="productsSection--listItem--logo"
-                src="images/featuredProducts/shopier_logo_1.svg"
-                srcset="images/featuredProducts/shopier_logo_1.svg"
-                alt="Shopier"
-              />
+              
             </button>            
       
     

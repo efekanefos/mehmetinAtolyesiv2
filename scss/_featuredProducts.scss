@@ -1,7 +1,8 @@
 .featuredProducts {
   background-color: #ee5522;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='74' height='74' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23d23d09' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
-  padding: 0 5rem;
+  padding: 7rem 5rem;
+  position: relative;
   &__heading {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -48,6 +49,7 @@
   }
   &--listItem--btn {
     background-color: #6735ff;
+    position: relative;
     outline: none;
     border: none;
     width: 65%;
@@ -61,6 +63,22 @@
     padding: 0.2rem;
     border-radius: 0.5rem;
     box-shadow: 5px 5px 10px #4b00bb;
+    height: 3rem;
+  }
+
+  &--listItem--btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 60%;
+    background-image: url("../images/featuredProducts/shopier_logo_1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    filter: invert(89%) sepia(85%) saturate(5276%) hue-rotate(84deg) brightness(103%) contrast(93%);
   }
 
   &--listItem--btn:hover {
@@ -69,18 +87,24 @@
   }
 
   &--listItem--btn:hover + &--listItem--logo {
-    filter: invert(10%) sepia(48%) saturate(7440%) hue-rotate(262deg)
-      brightness(140%) contrast(149%);
+    filter: invert(10%) sepia(48%) saturate(7440%) hue-rotate(262deg) brightness(140%) contrast(149%);
   }
 
   &--listItem--logo {
     width: 40%;
     padding: 0.5rem;
-    filter: invert(89%) sepia(85%) saturate(5276%) hue-rotate(84deg)
-      brightness(103%) contrast(93%);
+    filter: invert(89%) sepia(85%) saturate(5276%) hue-rotate(84deg) brightness(103%) contrast(93%);
+    background-image: url("../images/featuredProducts/shopier_logo_1.svg");
   }
 }
-
+.wave2 {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: -10%;
+  left: 0%;
+  fill: #ffaa00 !important;
+}
 @media (max-width: 1170px) {
   .featuredProducts {
     &--list {
@@ -95,6 +119,14 @@
       border-radius: 0.5rem;
       box-shadow: 5px 5px 10px #4b00bb;
     }
+  }
+  .wave2 {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    top: -0%;
+    left: 0%;
+    fill: #ffaa00 !important;
   }
 }
 @media (max-width: 700px) {
