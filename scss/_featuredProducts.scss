@@ -52,7 +52,7 @@
     position: relative;
     outline: none;
     border: none;
-    width: 65%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 1rem;
     display: flex;
@@ -90,7 +90,7 @@
   }
 
   &--listItem--link {
-    width: 100%;
+    width: 60%;
   }
 }
 .wave2 {

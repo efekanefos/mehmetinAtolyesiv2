@@ -12,7 +12,7 @@
   color: #fff;
   position: relative;
   &__logo--img {
-    width: 50%;
+    width: 40%;
   }
   &__title {
     position: absolute;
@@ -41,6 +41,7 @@
     position: relative;
     pointer-events: all;
     cursor: pointer;
+    font-size: 1.2rem;
   }
   &--listItem a {
     text-decoration: none;
